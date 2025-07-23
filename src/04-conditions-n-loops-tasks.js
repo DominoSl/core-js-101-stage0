@@ -100,8 +100,10 @@ function getSumBetweenNumbers(n1, n2) {
  *   10,1,1   =>  false
  *   10,10,10 =>  true
  */
-function isTriangle(/* a, b, c */) {
-  throw new Error('Not implemented');
+function isTriangle(a, b, c) {
+  const s = [a, b, c].sort();
+
+  return s[0] + s[1] > s[2];
 }
 
 /**
